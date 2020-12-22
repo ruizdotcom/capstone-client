@@ -1,1 +1,63 @@
 @import '~bootstrap/scss/bootstrap';
+
+body {
+  background-image: linear-gradient(#464A80, #404699, #4AA7F3, #4ACDF3);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.content {
+  margin-top: 90px;
+}
+#logo-img {
+  float: left;
+  margin-left: 15px;
+}
+#logo {
+  margin-bottom: 0;
+  margin-left: 5px;
+  float: left;
+}
+
+nav {
+  width: 100%;
+  float: left;
+}
+
+nav li {
+  float: right;
+  list-style: none;
+}
+
+nav li a {
+		display: block;
+		padding: 10px 15px;
+		text-decoration: none;
+		color: white;
+}
+
+nav li a:hover {
+		color: gray;
+}
+
+button {
+  width: 45vh;
+  margin-top: 32px;
+  padding: 20px;
+  border: 0;
+  border-radius: 360px;
+  background-color: white;
+  font-size: 20px;
+}
+
+button:enabled {
+  border-radius: 360px;
+}

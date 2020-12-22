@@ -12,6 +12,102 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <p id='message'></p>
+      <br>
+
+      <section id="landing">
+            <div class="landing-div">
+                <header>
+                    <img id="logo-img" src="https://img.icons8.com/ios-glyphs/24/ffffff/cute-hamster.png"/>
+                    <p id="logo">Capstone</p>
+                    <nav>
+                        <ul>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div class="content">
+                    <h1>A place to share inspiration and creativity</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+                    <div class="button-sign-up">
+                        <a href="#sign-up"><button>sign up</button></a>
+                    </div>
+                    <div class="button-sign-in">
+                        <a href="#sign-in"><button>sign in</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+      <section id='landing'>
+
+      </section>
+
+      <div id="sign-up-id">
+        <form id="sign-up-email">
+          <h3>SIGN UP</h3>
+          <input placeholder="email" type="email" name="credentials[email]">
+
+          <input placeholder="username" type="text" name="credentials[username]">
+
+          <input placeholder="password" type="password" name="credentials[password]">
+
+          <input placeholder="password confirmation" type="password" name="credentials[password_confirmation]">
+
+          <button id="sign-up-button" type="submit">Sign Up</button>
+        </form>
+      </div>
+
+      <br>
+
+      <div id="sign-in-id">
+        <form id="sign-in-email">
+          <h3>SIGN IN</h3>
+
+            <input placeholder="email" type="email" name="credentials[email]">
+
+            <input placeholder="password" type="password" name="credentials[password]">
+
+            <button type="submit">Sign In</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div id="change-password-id">
+          <form id="change-password-email">
+            <h3>CHANGE PASSWORD</h3>
+
+            <input placeholder="old password" type="password" name="passwords[old]">
+
+            <input placeholder="new password" type="password" name="passwords[new]">
+
+            <button type="submit">Change Password</button>
+          </form>
+        </div>
+
+        <br>
+
+        <div>
+          <form id="sign-out-email">
+            <h3>Sign Out</h3>
+
+            <button type="submit">Sign Out</button>
+          </form>
+        </div>
+
+        <div>
+          <form id="create-post-form">
+            <h3>CREATE POST</h3>
+
+            <input placeholder="post title" type="text" name="post[title]">
+
+            <button type="submit">Create</button>
+          </form>
+        </div>
     </body>
 </html>
