@@ -1,11 +1,25 @@
 @import '~bootstrap/scss/bootstrap';
-
+// profile background colrr (css last few{})
 body {
-  background-image: linear-gradient(#4AA7F3, #4ACDF3);
+  background-image: linear-gradient(#ffffff, #fffefe);
+  color: black;
+  height: 100%;
+  text-align: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
+  background-attachment: fixed;
 }
+
+#message {
+  margin-left: 25%;
+}
+
+html {
+  height: 100%;
+}
+
+// #landing #sign-out-email #sign-in-email {
+//   text-align: center;
+// }
 
 header {
   margin-top: -25px;
@@ -18,11 +32,13 @@ header {
 #logo-img {
   float: left;
   margin-left: 15px;
+
 }
 #logo {
   margin-bottom: 0;
   margin-left: 5px;
   float: left;
+  font-size: 25px
 }
 
 nav {
@@ -39,37 +55,207 @@ nav li a {
 		display: block;
 		padding: 10px 15px;
 		text-decoration: none;
-		color: white;
+		color: black;
 }
 
 nav li a:hover {
-		color: lightgray;
+		// color: #2d42c5;
+    color: #ffc106;
     text-decoration: none;
 }
 
-.content {
-  margin-top: 70px;
+// #content {
+//   margin: 100px 20px 0 0;
+//   // border: 5px solid #333;
+//   overflow: auto
+// }
+//
+// #landing-i {
+//   float: left;
+// }
+//
+// #landing-i img {
+//   display: block;
+// }
+//
+// #landing-content {
+//   margin-left: 210px
+// }
+//
+// #landing-h1 {
+//   font-weight: bold;
+//   // font-size: 200%
+//   font-size: 70px;
+//   // margin-top: 120px;
+//   // float: left;
+// }
+//
+// #landing-p {
+//   font-size: 21px;
+//   // float: left;
+//   // margin-right: 200px;
+// }
+
+#content {
+  margin: 120px 0 0 20px;
+  overflow: auto
+}
+
+#landing-i {
+  float: right;
+}
+
+#landing-i img {
+  display: block;
+}
+
+#landing-content {
+  margin-right: 650px
 }
 
 #landing-h1 {
-  font-size: 60px;
+  font-weight: bold;
+  font-size: 70px;
+  margin-top: 80px;
+  // THIS WORKS V
+  // margin-left: 70px;
+}
+
+#lw {
+  color: #ffc106;
 }
 
 #landing-p {
-  font-size: 20px;
-  float: left;
+  font-size: 21px;
+  // float: left;
+  // margin-right: 200px;
 }
 
 button {
-  width: 45vh;
+  width: 300px;
   margin-top: 32px;
   padding: 20px;
   border: 0;
-  border-radius: 360px;
-  background-color: white;
+  border-radius: 20px;
+  background-color: #2d42c5;
   font-size: 20px;
+}
+
+button:hover {
+  background-color: #ffc106
+}
+
+#button-sign-in {
+  display: inline-block;
+}
+
+#button-sign-up {
+  display: inline-block;
+}
+
+#sign-in-lb:hover {
+  // background-color: #2d42c5;
+  background-color: #ffc106;
+}
+
+#sign-up-lb:hover {
+  // background-color: #0016a1;
+  background-color: #ffc106;
+}
+
+// Sign in forms ----------------------------------------
+#sign-up-lb {
+  background-color: #2d42c5;
+  color: white;
+}
+
+#sign-in-lb {
+  background-color: black;
+  color: white;
 }
 
 button:enabled {
   border-radius: 360px;
 }
+
+input[type=email], input[type=text], input[type=password] {
+  width: 70vh;
+  padding: 22px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: block;
+  border: 0;
+  border-radius: 40px;
+  background-color: #d7d7d7;
+}
+
+#sign-in-email {
+  margin-top: 200px
+}
+
+#sign-in-button {
+  width: 70vh;
+}
+
+#sign-up-email {
+  margin-top: 200px
+}
+
+#sign-up-button {
+  width: 70vh;
+}
+
+// got what i used in #profile-form from https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp
+#profile-form {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  // width: 360px; /* Set the width of the sidebar */
+  width: 25%;
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  // background-image: linear-gradient(#292841, #1c1c29);
+  // background-image: linear-gradient(#182dae, #11207d);
+  background-color: #ffc106;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+}
+
+#profile-form img button {
+  padding: 6px 8px 6px 16px;
+  display: block;
+}
+
+#main {
+  margin-left: 25%;
+  // padding: 0px 10px;
+  text-align: center;
+}
+
+#post-list {
+  text-decoration: none;
+  list-style: none;
+}
+
+#post-list li {
+  border: 5px solid #333;
+  width: 75%;
+}
+
+li:nth-child(5) {
+    margin-top: 20px;
+}
+
+li:nth-child(-n+3) {
+    border-bottom: 0;
+}
+
+// li {
+//  border: 2px solid black;
+// }
+
+li:nth-of-type(5) {
+ border: 2px solid black;
+}
+
+// #post-list

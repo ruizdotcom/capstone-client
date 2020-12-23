@@ -12,4 +12,9 @@ $(() => {
   $('#sign-in-email').on('submit', events.onSignInEmail)
   $('#change-password-email').on('submit', events.onChangePasswordEmail)
   $('#sign-out-email').on('submit', events.onSignOutEmail)
+
+  $('#create-post-form').on('submit', events.onCreatePost)
+  $('#show-posts-form').on('submit', events.onShowPosts)
+  $('#update-post-form').on('submit', events.onUpdatePost)
+  $('#delete-post-form').on('submit', events.onDeletePost)
 })

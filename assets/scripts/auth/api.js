@@ -39,9 +39,57 @@ const signOutData = function (data) {
   })
 }
 
+// CRUD ----------------------------------
+const createPostData = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/posts',
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'POST',
+    data: data
+  })
+}
+
+const showPostsData = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/posts',
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'GET',
+    data: data
+  })
+}
+
+const updatePostData = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/posts/' + data.post.id,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'PATCH',
+    data: data
+  })
+}
+
+const deletePostData = function (data) {
+  return $.ajax({
+    url: config.apiUrl + '/posts/' + data.post.id,
+    headers: {
+      Authorization: 'Bearer ' + store.user.token
+    },
+    method: 'DELETE'
+  })
+}
+
 module.exports = {
   signUpData,
   signInData,
   changePasswordData,
-  signOutData
+  signOutData,
+  createPostData,
+  showPostsData,
+  updatePostData,
+  deletePostData
 }
