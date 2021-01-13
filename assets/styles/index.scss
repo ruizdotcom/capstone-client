@@ -213,12 +213,12 @@ input[type=email], input[type=text], input[type=password] {
 
 // got what i used in #profile-form from https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp  ---------------
 #profile-form {
-  height: 100%; /* Full-height: remove this if you want "auto" height */
+  height: auto; /* Full-height: remove this if you want "auto" height */
   // width: 360px; /* Set the width of the sidebar */
   width: 25%;
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  // z-index: 1; /* Stay on top */
+  // top: 0; /* Stay at the top */
   left: 0;
   // background-image: linear-gradient(#292841, #1c1c29);
   // background-image: linear-gradient(#182dae, #11207d);

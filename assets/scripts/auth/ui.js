@@ -100,9 +100,9 @@ const signUpFailed = function () {
 
 // SIGN_IN
 const signInSuccessful = function (response) {
-  $('#message').text('Here is your token: ' + response.user.token)
+  // $('#message').text('Here is your token: ' + response.user.token)
   store.user = response.user
-  $('#landing').hide()
+  $('#content').hide()
   $('#sign-up-email').hide()
   $('#sign-in-email').hide()
 
